@@ -8,6 +8,11 @@ new Vue({
     prop: null
   },
   beforeMount: function () {
-    this.prop = JSON.parse(this.$el.attributes['data-prop'].value);
+    // @ts-ignore
+    if (typeof google !== 'undefined') {
+      this.prop = JSON.parse(this.$el.attributes['data-prop'].value);
+    } else {
+      this.prop = { string: 'test-env' };
+    }    
   },
 })
