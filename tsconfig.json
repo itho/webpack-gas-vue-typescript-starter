@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "noImplicitAny": true,
+    // "module": "es2015",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ]
+  }
+}
