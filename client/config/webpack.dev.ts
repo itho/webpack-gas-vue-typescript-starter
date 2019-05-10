@@ -16,10 +16,6 @@ module.exports = merge(common, {
     contentBase: './build',
     port: 9090
   },
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, '../build')
-  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({

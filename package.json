@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build:client && npm run build:server",
-    "build:client": "webpack --config ./client/webpack.prod.ts && cd build && rm client.bundle.js",
-    "build:server": "webpack --config ./server/webpack.config.ts",
+    "build:client": "webpack --config ./client/config/webpack.prod.ts && cd build && rm client.bundle.js",
+    "build:server": "webpack --config ./server/config/webpack.config.ts",
     "deploy": "clasp push",
-    "dev": "webpack-dev-server --config ./client/webpack.dev.ts --open",
+    "dev": "webpack-dev-server --config ./client/config/webpack.dev.ts --open",
     "test": "tbd"
   },
   "author": "itho",

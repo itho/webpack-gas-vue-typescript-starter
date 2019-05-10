@@ -16,7 +16,7 @@ module.exports = [
     output:
     {
       filename: '[name].bundle.js',
-      path: path.resolve(__dirname, '../build')
+      path: path.resolve(__dirname, '../../build')
     },
     module: {
       rules: [
@@ -47,7 +47,7 @@ module.exports = [
     output:
     {
       filename: 'functions.bundle.js',
-      path: path.resolve(__dirname, '../build')
+      path: path.resolve(__dirname, '../../build')
     },
     module: {
       rules: [
@@ -74,7 +74,7 @@ module.exports = [
   //   output:
   //   {
   //     filename: 'services.bundle.js',
-  //     path: path.resolve(__dirname, '../build')
+  //     path: path.resolve(__dirname, '../../build')
   //   },
   //   module: {
   //     rules: [
@@ -101,7 +101,7 @@ module.exports = [
     output:
     {
       filename: 'utils.bundle.js',
-      path: path.resolve(__dirname, '../build')
+      path: path.resolve(__dirname, '../../build')
     },
     module: {
       rules: [
